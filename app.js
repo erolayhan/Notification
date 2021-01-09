@@ -10,7 +10,7 @@ const adminverify= require('./middleware/adminverify');
 app.set('api_secret_key',key.api_secret_key);
 app.set('api_secret_key2',key.api_secret_key2);
 
-app.use('/test', require('./routes/test'));
+app.use('/test', require('./routes/test')); //deneme
 app.use('/login', require('./routes/login'));   //token ile birlikte lecturer girişi sağlar
 app.use('/course', require('./routes/course')); //dersleri görme 
 app.use('/notify', require('./routes/notification'));   //notları görme derse göre not görme
